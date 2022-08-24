@@ -55,6 +55,7 @@ body{
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    border-radius: 10px;
 
 }
 .box{
@@ -65,12 +66,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 .sub_box{
     background-color: rgb(86, 204, 86);
     width: 300px;
     height: 80px;
     padding: 20px 10px;
+    border-radius: 100px;
+    transition: transform 0.6s;
+
 }
 
 .container:hover{
@@ -84,5 +89,5 @@ body{
 .sub_box:hover{
     background-color: rgb(103, 241, 103);
     cursor: pointer;
-
+    transform: rotate(90deg);
 }
