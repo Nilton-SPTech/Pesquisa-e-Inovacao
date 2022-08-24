@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css">
+
+        <title>Aula 01 de HTML e CSS</title>
+    
+    </head>
+    <body>
+
+        <div class="header">
+            <h1 class="titulo">Olá SPTechers!</h1>
+            <button class="botao" onclick="tome()">TOME!</button>
+            <div id="div_mensagem"></div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="sub_box"></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+
+    function tome(){
+        div_mensagem.innerHTML = `Uh PAPAE!`;
+    }
+
+</script>
