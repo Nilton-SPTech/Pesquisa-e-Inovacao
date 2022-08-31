@@ -1,4 +1,9 @@
 
+/*COLOCANDO VARIAEL NA RAIZ*/
+:root {
+    --aqua: #32b9cd; 
+}
+
 
 *{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -14,36 +19,46 @@ body{
 .div_header{
     width: 100%;
     height: 80px;
-    border-bottom: 2px solid #f1f1f1;
+    border-bottom: 3px solid var(--aqua);
 }
 
 .div_container{
+    margin: 0 auto;
+    width: 80%;
+    
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-around; /*ALINHAMENTO NA HORIZONTAL*/
+    align-items: center; /*ALINHAMENTO NA VERTICAL*/
 }
 
 .h1_titulo{
-    color: aquamarine;
+    color: var(--aqua);
 }
 
 ul{
     display: flex;
     gap: 40px;
+    
+    
 }
 ul {
     color: coral;
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    
+    transition: border-bottom 2s;
 }
 
 ul > li:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid coral;
     cursor: pointer ;
 }
 
+.li_login{
+    padding-left: 20px;
+    border-left: 1px solid coral;
+}
 
 
