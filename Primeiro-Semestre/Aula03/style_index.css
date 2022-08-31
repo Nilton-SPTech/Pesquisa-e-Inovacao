@@ -62,5 +62,6 @@ ul > li:hover {
 .span_barra{
     font-weight: bolder;
     font-size: 1.2em;
+    cursor: default ;
 }
 
