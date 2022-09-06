@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira</title>
+</head>
+<body>
+    <h1>Calculadora financeira</h1>
+    <p>Quantos animais tem no seu terrario?</p><input type="text" id="in_animais">
+    <p>Você tem um controle de temperatura e umidade? </p> <input type="text" id="in_controle" placeholder="sim ou não"><br><br>
+    <button onclick="analisar()">Analisar Gastos</button><br>
+    <div id="div_gastos"></div>
+    
+</body>
+</html>
+
+<script>
+    function analisar(){
+        var animais = Number(in_animais.value)
+        var controle = in_controle.value
+        var gastos = 1400
+        var gastosTerrario = gastos * animais
+
+        if(controle == 'não'){
+            div_gastos.innerHTML = 
+                `<p> A falta de um controle de temperatura pode acarretar em algumas 
+                doenças para o seu animal como Hipertemia e Hiportemia: <br>Seus Gastos em média por animal serão de: <br> 
+                <ul>
+                    <li> 900 Sensor de oximetria </li>
+                    <li> 200 Almofada Termica </li>
+                    <li> 300 cobertor de Arquente </li>
+                </ul>
+                Seu gastos será em média de ${gastosTerrario} com o seu terrario.</p>`
+        } else if(controle == 'sim'){
+            div_gastos.innerHTML = ` <p> Vecê esta economizando até ${gastosTerrario}`
+        }
+    }
+</script>
