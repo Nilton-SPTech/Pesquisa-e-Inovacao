@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
     <title>Calculadora Financeira</title>
 </head>
 <body>
-    <h1>Calculadora financeira</h1>
-    <p>Quantos animais tem no seu terrario?</p><input type="text" id="in_animais">
-    <p>Você tem um controle de temperatura e umidade? </p> <input type="text" id="in_controle" placeholder="sim ou não"><br><br>
-    <button onclick="analisar()">Analisar Gastos</button><br>
-    <div id="div_gastos"></div>
+
+    <div class="div_container">
+        <div class="div_box_esquerda">
+            <h1>Lorenai</h1>
+        </div>
+        <div class="div_box_direita">
+            <h1>Calculadora financeira</h1>
+            <p>Quantos animais tem no seu terrario?</p><input type="text" id="in_animais">
+            <p>Você tem um controle de temperatura e umidade? </p> <input type="text" id="in_controle" placeholder="sim ou não"><br><br>
+            <button onclick="analisar()">Analisar Gastos</button><br>
+            <div id="div_gastos"></div>
+        </div>
+    </div>
     
 </body>
 </html>

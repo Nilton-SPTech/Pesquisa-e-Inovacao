@@ -1,0 +1,23 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div_container{
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_box_esquerda{
+    background-color: red;
+    height: 100%;
+
+}
+.div_box_direita{
+    background-color: green;
+    height: 100%;
+}
