@@ -45,16 +45,11 @@ h2{
 }
 
 
-.b1_4c{
-    order: -3;
+.div_containerc{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
-.b1_3c{
-    order: -2;
-}
-.b1_2c{
-    order: -1;
-}
-
 
 .b1_1, .b1_2, .b1_3, .b1_4{
     width: 70px;
