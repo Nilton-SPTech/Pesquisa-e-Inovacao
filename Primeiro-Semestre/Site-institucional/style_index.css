@@ -74,7 +74,7 @@ ul > li:hover {
 }
 
 .div_banner > .div_container{
-    height: 350px;
+    height: 410px;
     align-items: center;
     justify-content: center;
 }
@@ -95,8 +95,11 @@ p > b{
     margin-top: 50px;
 }
 
-.div_caixas{
+.div_caixas, .div_caixa{
     display: flex;
+}
+
+.div_caixas{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -104,22 +107,21 @@ p > b{
 }
 
 .div_caixa{
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: 280px;
 }
 .div_social img{
-    height: 180px;
-    width: 180px;
+    width: 170px;
     align-self: center;
 }
-
-.div_social h4{
-    color: rgb(177, 60, 60);
+.div_caixa h4{
+    color: #b13c3c;
     font-size: 1.3rem;
+    margin: 15px  0;
 }
 .div_social p{
     text-align: center;
-    color: rgb(78, 78, 78);
+    color: rgb(65, 65, 65);
+    font-size: 1.1rem;
 }
