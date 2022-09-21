@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    
+
+    <!-- CABEÇALHO -->
+    <div class="div_header">
+        <div class="div_container">
+            <h1 class="h1_titulo">Aquatec</h1>
+            <div class="div_navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>Sobre nós</li>
+                    <span class="span_barra">|</span>
+                    
+                    <li class="li_login">
+                        Login
+                    </li>
+                    </a>
+                    <li>Cadastro</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- BANNER -->
+     <div class="div_banner">
+        <div class="div_container">
+            <div class="div_caixa_form">
+                <h2>Olá, seja Bem-Vindo &hearts;</h2>
+                <div class="div_campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="input_email" placeholder="user@email.com">
+                </div>
+                <div class="div_campo">
+                    <label for="senha">Senha</label>
+                    <div>
+                        <input type="password" id="input_senha" placeholder="**********">
+                        <img onclick="password_eye()" src="assets/img/password_eye.png" id="img_eye">
+                    </div>
+                </div>
+                <button onclick="entrar()">Entrar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="div_footer">
+        <div class="div_container">
+            <p>Copyright &copy;Nilton-SPTech - 2022</p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
+
+<script>
+
+    function password_eye(){
+        img_eye.scr = "assets/img/password_hide.png"
+    }
+</script>
