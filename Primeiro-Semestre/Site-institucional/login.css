@@ -4,7 +4,9 @@
     height: 450px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    animation: flutuando 15s infinite ;
+
+    animation: aparecendo 1s;
+    
     
     display: flex;
     flex-direction: column;
@@ -14,15 +16,17 @@
     padding: 10px 0 0 0;
 }
 
-@keyframes flutuando{
+@keyframes aparecendo{
     0%{
-        transform: translateY(10px);
+        transform: translateY(100px);
+        opacity: .1;
     }
-    50%{
-        transform: translateY(-10px);
+    75%{
+        transform: translateY(0);
+        opacity: 1;
     }
     100%{
-        transform: translateY(10px);
+        transform: translateY(0);
     }
 }
 

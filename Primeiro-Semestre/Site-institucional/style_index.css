@@ -86,6 +86,22 @@ ul > li:hover {
     color: #fff;
     font-size: 2rem;
     width: 250px;
+    animation: aparecendo 1s;
+
+}
+
+@keyframes aparecendo{
+    0%{
+        transform: translateY(50px);
+        opacity: .2;
+    }
+    75%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 p > b{
     font-weight: bolder;
