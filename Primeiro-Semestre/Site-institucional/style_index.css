@@ -2,9 +2,12 @@
 /*COLOCANDO VARIAEL NA RAIZ*/
 :root {
     --aqua: #32b9cd; 
+    --rosa : #b13c3c; 
+    --coral : #ff7f50;
+    --aqua-claro: #3ab8a7;
 }
 
-
+/* Estilização de forma geral */
 *{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -19,7 +22,7 @@ body{
     background-color: rgb(0, 0, 0 );
     width: 100%;
     height: 80px;
-    border-bottom: 3px solid var(--aqua);
+    border-bottom: 3px solid var(--aqua-claro);
 }
 
 .div_container{
@@ -47,7 +50,7 @@ ul{
 }
 ul {
     
-    color: coral;
+    color: var(--coral);
     list-style: none;
     font-size: 1.1rem;
     font-weight: 600;
@@ -55,7 +58,7 @@ ul {
 }
 
 ul > li:hover {
-    border-bottom: 1px solid coral;
+    border-bottom: 1px solid var(--coral);
     cursor: pointer ;
 }
 
@@ -91,8 +94,7 @@ p > b{
 /* ESTILIZANDO O SOCIAL */
 .div_social{
     background-color: #fff;
-    height: 350px;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .div_caixas, .div_caixa{
@@ -111,9 +113,15 @@ p > b{
     align-items: center;
     width: 280px;
 }
+
 .div_social img{
     width: 170px;
     align-self: center;
+    transition: all .6s;
+}
+.div_social img:hover{
+    transform: translateY(-12px);
+    cursor: pointer;
 }
 .div_caixa h4{
     color: #b13c3c;
@@ -124,4 +132,18 @@ p > b{
     text-align: center;
     color: rgb(65, 65, 65);
     font-size: 1.1rem;
+}
+
+/* ESTILIZANDO O FOOTER */
+
+.div_footer{
+    padding: 40px 0;
+    background-color: var(--aqua-claro);
+}
+.div_footer p {
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    
 }
