@@ -1,0 +1,57 @@
+
+
+.div_campo,
+.div_caixa_form{
+    display: flex;
+    flex-direction: column;
+    color: var(--coral);
+    
+}
+
+.div_caixa_form{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 490px;
+    padding: 10px 0 0 0;
+
+    border-radius: 20px;
+    align-items: center;
+    animation: aparecendo 1s;
+
+}
+
+.div_campo{
+    margin-top: 20px;
+}
+label{
+    font-weight: bold;
+    letter-spacing: .9px;
+}
+
+
+input{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid ;
+
+    text-align: center;
+    color: rgb(102, 102, 102);
+    border: 2px solid var(--aqua-claro);
+}
+
+button{
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+
+    border-radius: 5px;
+    background-color: var(--coral);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #e76536; 
+}

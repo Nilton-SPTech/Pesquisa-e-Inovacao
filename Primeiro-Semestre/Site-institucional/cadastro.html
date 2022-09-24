@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/style_index.css">
-    <link rel="stylesheet" href="assets/css/login.css">
-    <title>Login - AQUATEC</title>
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+
+    <title>Cadastro - AQUATEC</title>
 </head>
 <body>
     
-
     <!-- CABEÇALHO -->
     <div class="div_header">
         <div class="div_container">
@@ -25,12 +25,10 @@
                     <span class="span_barra">|</span>
                     
                     <li class="li_login">
-                        Login
+                        <a href="login.html">Login</a>
                     </li>
                     </a>
-                    <li>
-                        <a href="cadastro.html">Cadastro</a>
-                    </li>
+                    <li>Cadastro</li>
                 </ul>
             </div>
         </div>
@@ -41,19 +39,26 @@
      <div class="div_banner">
         <div class="div_container">
             <div class="div_caixa_form">
-                <h2>Olá, seja Bem-Vindo &hearts;</h2>
+                <h2>Bem-vindo!</h2>
+                
+                <div class="div_campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Seu nome">
+                </div>
                 <div class="div_campo">
                     <label for="email">E-mail</label>
                     <input type="email" id="input_email" placeholder="user@email.com">
                 </div>
                 <div class="div_campo">
                     <label for="senha">Senha</label>
-                    <div>
-                        <input type="password" id="input_senha" placeholder="**********">
-                        <img id="img_eye" src="assets/img/password_eye.png">
-                    </div>
+                    <input type="password" placeholder="*********">
                 </div>
-                <button onclick=entrar()">Entrar</button>
+                <div class="div_campo">
+                    <label for="csenha">Confirmação da Senha:</label>
+                    <input type="password" placeholder="*********">
+                </div>
+                
+                <button onclick="cadastrar()">Cadastrar</button>
             </div>
         </div>
     </div>
@@ -64,10 +69,6 @@
             <p>Copyright &copy;Nilton-SPTech - 2022</p>
         </div>
     </div>
-
-
-
-
 
 </body>
 </html>

@@ -72,7 +72,7 @@ ul > li:hover {
 
 /* ESTILIZANDO O BANNER */
 .div_banner{
-    background-image: url("assets/img/bg-jelly-fish-para_outras_pags.png");
+    background-image: url("../img/bg-jelly-fish-para_outras_pags.png");
     padding: 100px 0 ;
     background-attachment: fixed;
 }

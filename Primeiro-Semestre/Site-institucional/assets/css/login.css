@@ -41,14 +41,15 @@
 }
 
 label{
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: .9px;
+    color: var(--coral);
 }
 input{
     border: 2px solid var(--aqua-claro);
-    border-radius: 5px;
+    border-radius: 10px;
     width: 250px;
-    height: 35px;
+    height: 40px;
     padding-left: 10px;
     color: rgb(102, 102, 102);
 }
