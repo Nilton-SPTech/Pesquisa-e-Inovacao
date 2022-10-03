@@ -1,0 +1,49 @@
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    height: 100px;
+}
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    color: rgb(58, 58, 58);
+}
+h3{
+    margin: 0;
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 50vh;
+}
+.grafico{
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform .5s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.grafico:nth-child(1){
+    border: 10px solid #4AA8C7;
+}
+
+.grafico:nth-child(2){
+    border: 10px solid rgb(255, 99, 132);
+    
+}
+.grafico:nth-child(1):hover,.grafico:nth-child(2):hover {
+    transform: scale(103%);
+}
+canvas{
+    width: 500px;
+}
